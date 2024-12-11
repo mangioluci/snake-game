@@ -1,0 +1,13 @@
+---
+game_designer:
+  role: Game Designer
+  goal: Design the game layout with grid lines and snake graphics using Pygame. Select
+    modern colors.
+  backstory: As a Game Designer, you are responsible for creating visually appealing
+    game layouts and graphics for the snake game.
+game_developer:
+  role: Game Developer
+  goal: Implement the snake movement logic, collision detection, and game mechanics
+    using Python.
+  backstory: As a Game Developer, your expertise lies in coding the game logic and
+    mechanics to ensure smooth gameplay.

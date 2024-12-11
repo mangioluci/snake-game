@@ -1,0 +1,20 @@
+[project]
+name = "designing_a_classic_snake_game"
+version = "0.1.0"
+description = "designing_a_classic_snake_game using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.80.0,<1.0.0"
+]
+
+[project.scripts]
+designing_a_classic_snake_game = "designing_a_classic_snake_game.main:run"
+run_crew = "designing_a_classic_snake_game.main:run"
+train = "designing_a_classic_snake_game.main:train"
+replay = "designing_a_classic_snake_game.main:replay"
+test = "designing_a_classic_snake_game.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

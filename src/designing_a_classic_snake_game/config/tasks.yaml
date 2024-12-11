@@ -1,0 +1,37 @@
+---
+design_game_layout_task:
+  description: Design the game layout with grid lines and snake graphics using Pygame.
+    Select modern colors.
+  expected_output: A visually appealing game layout with grid lines and snake graphics
+    that meet the specified grid size and color requirements.
+  async_execution: false
+  agent:
+implement_game_logic_task:
+  description: Implement the snake movement logic, collision detection, and food generation
+    using Python. {initial snake speed}
+  expected_output: Successfully coded snake movement logic, collision detection, and
+    food generation with the specified initial snake speed.
+  async_execution: false
+  agent:
+create_game_controls_task:
+  description: Create game controls for player interaction using Pygame.
+  expected_output: Functional game controls that allow player interaction for movement
+    and gameplay.
+  async_execution: false
+  agent:
+  context:
+  - implement_game_logic_task
+add_scoring_system_task:
+  description: Add scoring system and game over conditions.
+  expected_output: Scoring system implemented with game over conditions for a complete
+    gaming experience.
+  async_execution: false
+  agent:
+  context:
+  - implement_game_logic_task
+test_game_functionality_task:
+  description: Test the game for smooth functionality and visual appeal.
+  expected_output: Thoroughly tested game with smooth functionality, bug-free gameplay,
+    and visually appealing graphics.
+  async_execution: false
+  agent:
